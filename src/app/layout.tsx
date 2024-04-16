@@ -1,8 +1,20 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { DM_Sans, Open_Sans } from "next/font/google";
 import "./globals.css";
+import {Providers} from "./providers";
+import Navbar from "../components/globals/Navbar"
 
-const inter = Inter({ subsets: ["latin"] });
+const open_sans = Open_Sans({ subsets: ["latin"],  variable: '--font-open_sans', },
+);
+
+
+// const open_sans = Open_Sans({ subsets: ["latin"] });
+const dm_sans = DM_Sans({
+  weight: ['400','500', '600', '700', '800', '900'],
+  variable: '--font-dm-sans',
+  subsets: ['latin']
+})
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +27,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${open_sans.variable} ${dm_sans.className}         className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          open_sans.variable
+        )}`}  > 
+      
+                 
+      <Providers>
+        <Navbar></Navbar>
+        {children}
+        </Providers>
+        </body>
     </html>
+
   );
 }
