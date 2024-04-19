@@ -27,7 +27,7 @@ const CardHoverEffectDemo = dynamic(() => import('./CardHover-wiki'))
 
 
 
-export function HeroHighlightDemo() {
+ function HeroHighlightDemo() {
   return (
     <HeroHighlight>
       <motion.h1
