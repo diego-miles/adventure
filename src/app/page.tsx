@@ -14,8 +14,8 @@ export default function Home() {
 
     <main className="flex min-h-screen flex-col items-center justify-between">
     <BackgroundBoxesDemo></BackgroundBoxesDemo>
-      <div className="  text-center py-20 px-8  w-full">
-          <p className="font-medium text-indigo-900 italic">
+      <div className="  text-center py-24 px-8  w-full">
+          <p className="text-xl text-gray-700 italic ">
           Harnessing the AI Revolution for Business Growth.
         </p>
 </div>

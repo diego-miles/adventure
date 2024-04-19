@@ -1,11 +1,48 @@
 import { Boxes } from "./background-boxes";
+import { TypewriterEffectSmooth } from "../../components/ui/typewriter-effect";
 
+
+
+
+export function TypewriterEffectSmoothDemo() {
+  const words = [
+    {
+      text: "Adventure",
+    },
+    {
+      text: "Capital",
+    },
+    // {
+    //   text: ".",
+    //   className: "text-blue-500 dark:text-blue-500",
+    // },
+  ];
+
+
+
+  return (
+    <div className="flex flex-col items-center justify-center h-[10rem]  ">
+      {/* <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base  ">
+        Adventure .
+      </p> */}
+      <TypewriterEffectSmooth words={words} />
+      {/* <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
+        <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
+          Join now
+        </button>
+        <button className="w-40 h-10 rounded-xl bg-white text-black border border-black  text-sm">
+          Signup
+        </button>
+      </div> */}
+    </div>
+  );
+}
 
 
 export function BackgroundBoxesDemo() {
   return (
-    <div className="h-96 relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center rounded-lg">
-      <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+    <div className=" py-44 relative w-full overflow-hidden bg-white flex flex-col items-center justify-center rounded-lg">
+      <div className="absolute inset-0 w-full h-full bg-gray-100 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
  
       <Boxes />
       {/* <Image
@@ -16,11 +53,12 @@ export function BackgroundBoxesDemo() {
           className="w-17 h-17 z-20"
           
         /> */}
-      <h1 className="text-[1.5rem] text-white relative z-20 font-semibold ">
+        {/* <TypewriterEffectSmoothDemo></TypewriterEffectSmoothDemo> */}
+      <h1 className="text-[1.6rem] text-black/80 relative z-20 font-extrabold ">
         Adventure Capital
       </h1>
-      <p className="px-8 text-center mt-5 text-neutral-300 relative z-20">
-        Next generation platforms based on generative AI and agents.
+      <p className="text-xl  px-8 text-center mt-5 text-gray-600 relative z-20">
+        Next generation platforms based on AI systems.
       </p>
     </div>
   );

@@ -4,12 +4,21 @@
 
 
 :root {
-    font-size: 18px;
+    font-size: 16px;
 }
 
-main {
-    max-width: 60rem;
+@media (min-width: 768px) {
+    :root {
+        font-size: 18px;
+        /* Cambiar el tamaño de la fuente para dispositivos más pequeños */
+    }
+}
+
+
+section {
+    /* max-width: 60rem; */
     margin: 0 auto;
+    padding: 0 1.5rem;
 }
 
 
@@ -26,13 +35,16 @@ body {
 
 h2 {
     font-family: var(--font-open-sans);
-    padding-top: 1.8rem;
+    padding-top: 5rem;
     padding-bottom: .8rem;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.2;
 }
 
+h4 {
+    font-size: 1.2rem;
+}
 
 
 small {

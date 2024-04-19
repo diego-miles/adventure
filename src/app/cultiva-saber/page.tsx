@@ -14,6 +14,9 @@ import Adventure from '../../public/adventure.svg';
 import HeroHighlightDemo from '../../components/globals/hero-text'
 import { HoverEffect } from "../../components/ui/card-hover-effect";
 
+
+
+
 export function CardHoverEffectDemo() {
   return (
     <div className="max-w-6xl mx-auto px-2">
@@ -78,47 +81,25 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center ">
         
       <div className="text-center bg-white w-full px-1 rounded-[2rem]text-center">
-        <figure className="pt-16 mx-auto w-fit">
+        <figure className="pt-10 mx-auto w-fit max-w-56 md:max-w-60">
             <Image
             isZoomed
             alt="NextUI  Image "
             className="p-8"
-            src="/wiki-blue.svg"
-            width={140}
-            height={140}
+            src="/cultiva-saber.svg"
+            width={150}
+            // height={350}
             />
         </figure>
-        <HeroHighlightDemo></HeroHighlightDemo>
-        <InfiniteMovingCardsDemo></InfiniteMovingCardsDemo>
-        
-      {/* <GridSmallBackgroundDemo></GridSmallBackgroundDemo> */}
       </div>
       {/* <AuroraBackgroundDemo></AuroraBackgroundDemo> */}
-      <section className=" -mt-2 pt-5 text-center">
-        <p className=" italic text-slate-800 2xl:mx-96 text-lg md:text-3xl py-8">Engaging the students, tools for professors and tracking the science and engineering knowladge of the world.</p>
+      <section className=" text-center">
+        {/* <TypewriterEffectSmoothDemo></TypewriterEffectSmoothDemo> */}
+        <p className=" text-slate-900 text-2xl md:text-3xl py-4 px-2 font-bold ">Empowering <span className="bg-green-300 px-2 rounded-md">communities.</span> A sustainable and <span className="bg-green-300 px-2 rounded-md">independent</span> future</p>
 
-        <h2 >Products</h2>
-        {/* <ul className="list-none">
-  <li className="relative flex items-center">
-    
-    <p className="">Wikipedias (electronics, concepts, biographies, history).</p>
-  </li>
-  <li className="relative flex items-center">
-    <p className="">.</p>
-  </li>
-  <li className="relative flex items-center">
-    <p className="">Visualize the journey with high-quality images of book covers.</p>
-  </li>
-  <li className="relative flex items-center">
-    <p className="">Explore detailed syllabuses to preview the rich content.</p>
-  </li>
-  <li className="relative flex items-center">
-    <p className="">See how others rated the books on platforms like Amazon and Goodreads.</p>
-  </li>
-  <li className="relative flex items-center">
-    <p className=" ">Gain insights from personal reading experiences and reviews.</p>
-  </li>
-</ul> */}
+        <h2 >Program</h2>
+        <h3>Education</h3>
+        <p>The crops as education, scientific-technological, and community development.</p>
 
       <CardHoverEffectDemo></CardHoverEffectDemo>
               <h2 >Stack</h2>

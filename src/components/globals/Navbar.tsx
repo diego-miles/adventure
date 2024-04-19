@@ -4,6 +4,10 @@ import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, DropdownIt
 import {ChevronDown, Lock, Activity, Flash, Server, TagUser, Scale} from "./Icons.jsx";
 import {AcmeLogo} from "./AcmeLogo.jsx";
 
+
+
+
+
 export default function App() {
   const icons = {
     chevron: <ChevronDown fill="currentColor" size={16} height={"auto"} width={"auto"}/>,
@@ -11,9 +15,15 @@ export default function App() {
   };
 
   return (
-    <Navbar className="" height={50}>
-      <NavbarContent className=" sm:flex gap-5" justify="center">
+    <Navbar shouldHideOnScroll className="onScrollPositionChange" height="3rem">
+      <NavbarContent className=" sm:flex gap-4" justify="center">
+                <NavbarItem>
+          <Link color="foreground" href="#" size="sm">
+            Home
+          </Link>
+        </NavbarItem>
         <Dropdown>
+          
           <NavbarItem>
             <DropdownTrigger>
               <Button
@@ -29,14 +39,14 @@ export default function App() {
           </NavbarItem>
           <DropdownMenu
             aria-label="ACME features"
-            className="w-[200px]"
+            className="w-[210px]"
             itemClasses={{
               base: "gap-4",
             }}
           >
             <DropdownItem
               key="Wiki-science"
-              // description="Educational services."
+              description="Educational services"
             >
             <Link color="foreground" size="sm" href="wiki-science">
               Wiki Science
@@ -44,25 +54,25 @@ export default function App() {
             </DropdownItem>
             <DropdownItem
               key="cultiva-saber"
-              // description="Real-time metrics to debug issues. Slow query added? We’ll show you exactly where."
+              description="Promoting susteinability, independecy and community"
             >
-                          <Link color="foreground" href="wiki-science" size="sm">
+                          <Link color="foreground" href="cultiva-saber" size="sm">
               Cultiva Saber
           </Link>
 
             </DropdownItem>
             <DropdownItem
               key="production_ready"
-              // description="SaaS to empower Pymes in their inventory and selling process creating a cohesive solution across platforms."
+              description="Empowering Pymes. Inventoring and selling, cohesive solution across platforms"
             >
-                          <Link color="foreground" href="wiki-science" size="sm">
+                          <Link color="foreground" href="#" size="sm">
               Moto tienda
           </Link>
 
             </DropdownItem>
             <DropdownItem
               key="99_uptime"
-              // description="Sustainable products and lifesty habits for the future."
+              description="Market place for sustainable daily life products"
             >
                           <Link color="foreground" href="localhost:3000/wiki-science" size="sm">
               Barro Origen
@@ -73,7 +83,7 @@ export default function App() {
               key="supreme_support"
               // description="Congress event to capacite yuoug tech talend."
             >
-                                        <Link color="foreground" href="wiki-science" size="sm">
+                                        <Link color="foreground" href="#" size="sm">
               BIT
           </Link>
             </DropdownItem>
@@ -81,20 +91,25 @@ export default function App() {
               key="supreme_support"
               // description="Marketing and advertisment."
             >
-                                        <Link color="foreground" href="wiki-science" size="sm">
+                                        <Link color="foreground" href="#" size="sm">
               One Campaing
           </Link>
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>
         <NavbarItem>
-          <Link color="foreground" href="#" aria-current="page" size="sm">
+          <Link color="foreground" href="services" aria-current="page" size="sm">
             Services
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        {/* <NavbarItem>
           <Link color="foreground" href="#" size="sm">
             Students
+          </Link>
+        </NavbarItem> */}
+        <NavbarItem>
+          <Link color="foreground" href="contact" size="sm">
+            Contact
           </Link>
         </NavbarItem>
       </NavbarContent>

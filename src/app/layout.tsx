@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
 
     <html lang="en">
-      <body className={`${open_sans.variable} ${dm_sans.className}         className={cn(
+      <body className={`${open_sans.variable} ${dm_sans.className} ${"md:"}        className={cn(
           "min-h-screen bg-background font-sans antialiased",
           open_sans.variable
         )}`}  > 

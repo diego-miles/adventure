@@ -1,29 +1,21 @@
-import { DM_Sans } from "next/font/google";
-import type { Config } from "tailwindcss"
-
-
-const {
-  default: flattenColorPalette,
-} = require("tailwindcss/lib/util/flattenColorPalette");
-
-
-const {nextui} = require("@nextui-org/react");
+const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
+const { nextui } = require("@nextui-org/react");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    // your paths
     "./src/**/*.{ts,tsx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: "class",
   theme: {
     extend: {
-      fontFamily:{
-        dm_sans: ['var(--font-dm-sans)']
+      fontFamily: {
+        dm_sans: ['var(--font-dm-sans)'],
       },
       animation: {
         aurora: "aurora 60s linear infinite",
+        scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
       keyframes: {
         aurora: {
@@ -34,14 +26,17 @@ module.exports = {
             backgroundPosition: "350% 50%, 350% 50%",
           },
         },
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
       },
     },
   },
   plugins: [addVariablesForColors, nextui()],
-  
 };
 
-// This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
@@ -52,10 +47,6 @@ function addVariablesForColors({ addBase, theme }: any) {
     ":root": newVars,
   });
 }
-
-
-
-
 
 
 
