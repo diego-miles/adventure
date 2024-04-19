@@ -1,11 +1,6 @@
 
-"use client";
-
 import { motion } from "framer-motion";
 import React from "react";
-import { AuroraBackground } from "../../components/ui/aurora-background";
-import InfiniteMovingCardsDemo from '../../components/globals/moving-cards'
-import Cards from '../../components/globals/cards'
 import Contacts from '../../components/globals/contact'
 import Location from '../../components/globals/Location'
 import {Link} from "@nextui-org/react";

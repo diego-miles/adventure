@@ -10,8 +10,8 @@ import { HoverBorderGradient } from "./hover-border-gradient";
 export default function App() {
   return (
     <>
-    <div className=" w-full py-5 pt-10">
-    <Card isHoverable isPressable className="w-72  p-1 pb-2 pt-3 mx-auto my-9 bg-white border-3 border-gray-300 hover:bg-sky-100 ">
+    <div className="bg-gray-50 w-full py-5 pt-10 grid">
+    <Card isHoverable isPressable className="w-72  p-1 pb-2 pt-3 mx-auto my-9 bg-white border-3 border-gray-500 hover:bg-sky-100 ">
       <CardHeader className="pb-0 pt-2 px-3 flex-col items-start ">
         <h4 className="font-bold">wiki-science.com</h4>
         <p className="py-1  text-black/80 text-left">Science and Engineering Educational platform based on generative AI.</p>
@@ -35,16 +35,7 @@ export default function App() {
     </Card>
 
 
-</div>
-
-
-
-
-
-
-    <div className="bg-gray-50 w-full py-5">
-
-    <Card isHoverable isPressable className="w-72  p-1 pb-2 pt-3 mx-auto my-9 bg-white border-3 border-gray-300 hover:bg-sky-900 ">
+    <Card isHoverable isPressable className="w-72  p-1 pb-2 pt-3 mx-auto my-9 bg-white border-3 border-gray-500 hover:bg-sky-900 ">
       <CardHeader className=" pt-2 px-3 flex-col items-start pb-12">
         <h4 className="font-bold text-black">Oaxaca Subversiva</h4>
         <p className="py-1 text-default-500 text-black/80 text-left">24/7 coverage media, AI agents running in the back to bring the most confindent and factual news.</p>
@@ -66,14 +57,9 @@ export default function App() {
       </CardBody>
     {/* <HoverBorderGradientDemo></HoverBorderGradientDemo> */}
     </Card>
-    </div>
 
 
-
-
-
-    <div className="bg-gray-50 w-full py-5">
-    <Card isHoverable isPressable className="w-72  p-1 pb-2 pt-3 mx-auto my-9 bg-white border-3 border-gray-300 hover:bg-sky-900 ">
+    <Card isHoverable isPressable className="w-72  p-1 pb-2 pt-3 mx-auto my-9 bg-white border-3 border-gray-500 hover:bg-sky-900 ">
       <CardHeader className="pb-0 pt-2 px-3 flex-col items-start ">
         <h4 className="font-bold text-black">Cultiva Saber</h4>
         <p className="py-1 text-default-500 text-black/90 text-left">Agrocoesystems to empower the independence and education of communities.</p>
@@ -95,6 +81,31 @@ export default function App() {
       </CardBody>
     {/* <HoverBorderGradientDemo></HoverBorderGradientDemo> */}
     </Card>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+    <div className="bg-white w-full py-5">
+
+
+
+  
+    </div>
+
+
+
+
+
+    <div className="bg-slate-50 w-full py-5">
+
 
 
     </div>

@@ -1,10 +1,7 @@
 
-"use client";
 
-import { motion } from "framer-motion";
 import React from "react";
-import { AuroraBackground } from "../../components/ui/aurora-background";
-import InfiniteMovingCardsDemo from '../../components/globals/moving-cards'
+
 import Cards from '../../components/globals/cards'
 
 
@@ -12,56 +9,9 @@ import Cards from '../../components/globals/cards'
 import {Image} from "@nextui-org/react";
 import Adventure from '../../public/adventure.svg';
 import HeroHighlightDemo from '../../components/globals/hero-text'
-import { HoverEffect } from "../../components/ui/card-hover-effect";
+import {CardHoverEffectDemo} from "./CardHover-cultiva"
 
 
-
-
-export function CardHoverEffectDemo() {
-  return (
-    <div className="max-w-6xl mx-auto px-2">
-      <HoverEffect items={projects} />
-    </div>
-  );
-}
-export const projects = [
-  {
-    title: "Electronics encyclopedia",
-    description:
-      "Accesible information for people to build.",
-    link: "#",
-  },
-  {
-    title: "The outsiders",
-    description:
-      "Mapping the hisoty of the people that has shaped our world.",
-    link: "#",
-  },
-  {
-    title: "Periodic table",
-    description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "#",
-  },
-  {
-    title: "Inventions",
-    description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "#",
-  },
-  {
-    title: "Glossary",
-    description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "#",
-  },
-  {
-    title: "Crops calendar",
-    description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "#",
-  },
-];
 
 
 export function GridSmallBackgroundDemo() {

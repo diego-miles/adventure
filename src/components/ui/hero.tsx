@@ -54,7 +54,7 @@ export function BackgroundBoxesDemo() {
           
         /> */}
         {/* <TypewriterEffectSmoothDemo></TypewriterEffectSmoothDemo> */}
-      <h1 className="text-[1.6rem] text-black/80 relative z-20 font-extrabold ">
+      <h1 className="text-[1.7rem] text-black/80 relative z-20 font-extrabold ">
         Adventure Capital
       </h1>
       <p className="text-xl  px-8 text-center mt-5 text-gray-600 relative z-20">

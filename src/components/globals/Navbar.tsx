@@ -18,7 +18,7 @@ export default function App() {
     <Navbar shouldHideOnScroll className="onScrollPositionChange" height="3rem">
       <NavbarContent className=" sm:flex gap-4" justify="center">
                 <NavbarItem>
-          <Link color="foreground" href="#" size="sm">
+          <Link color="foreground" href="/" size="sm">
             Home
           </Link>
         </NavbarItem>
