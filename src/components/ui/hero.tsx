@@ -41,7 +41,7 @@ export function TypewriterEffectSmoothDemo() {
 
 export function BackgroundBoxesDemo() {
   return (
-    <div className=" py-44 relative w-full overflow-hidden bg-white flex flex-col items-center justify-center rounded-lg">
+    <div className=" py-48 relative w-full overflow-hidden bg-white flex flex-col items-center justify-center rounded-lg">
       <div className="absolute inset-0 w-full h-full bg-gray-100 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
  
       <Boxes />
@@ -54,10 +54,10 @@ export function BackgroundBoxesDemo() {
           
         /> */}
         {/* <TypewriterEffectSmoothDemo></TypewriterEffectSmoothDemo> */}
-      <h1 className="text-[1.7rem] text-black/80 relative z-20 font-extrabold ">
+      <h1 className="text-[1.7rem] md:text-[2.5rem] text-black/80 relative z-20 font-extrabold ">
         Adventure Capital
       </h1>
-      <p className="text-xl  px-8 text-center mt-5 text-gray-600 relative z-20">
+      <p className="text-xl md:text-2xl px-8 text-center mt-5 text-gray-600 relative z-20">
         Next generation platforms based on AI systems.
       </p>
     </div>

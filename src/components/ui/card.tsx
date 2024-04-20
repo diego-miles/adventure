@@ -9,9 +9,10 @@ import { HoverBorderGradient } from "./hover-border-gradient";
 
 export default function App() {
   return (
-    <>
-    <div className="bg-gray-50 w-full py-5 pt-10 grid">
-    <Card isHoverable isPressable className="w-72  p-1 pb-2 pt-3 mx-auto my-9 bg-white border-3 border-gray-500 hover:bg-sky-100 ">
+    <section className="bg-gray-50 w-full">
+      <h2>In-house Products</h2>
+    <div className=" w-fit mx-auto py-5 pt-10 grid gap-6  grid-cols-1 sm:grid-cols-3">
+    <Card isHoverable isPressable className="w-72  p-1 pb-2 pt-3 mx-auto my-9 bg-white border-2 border-gray-200 hover:bg-slate-200 ">
       <CardHeader className="pb-0 pt-2 px-3 flex-col items-start ">
         <h4 className="font-bold">wiki-science.com</h4>
         <p className="py-1  text-black/80 text-left">Science and Engineering Educational platform based on generative AI.</p>
@@ -23,9 +24,9 @@ export default function App() {
         <Image
           isZoomed
           alt="Card background text-center"
-          className="object-cover rounded-xl p-1"
+          className="object-cover rounded-xl p-3"
           src="/wiki-blue.svg"
-          width={70}
+          width={100}
         />
         </figure>
       <Link href="#" className="text-xs absolute z-20 text-black bottom-4 right-6  ">See more ➝</Link>
@@ -35,7 +36,7 @@ export default function App() {
     </Card>
 
 
-    <Card isHoverable isPressable className="w-72  p-1 pb-2 pt-3 mx-auto my-9 bg-white border-3 border-gray-500 hover:bg-sky-900 ">
+    <Card isHoverable isPressable className="w-72  p-1 pb-2 pt-3 mx-auto my-9 bg-white border-2 border-gray-200 hover:bg-slate-100 ">
       <CardHeader className=" pt-2 px-3 flex-col items-start pb-12">
         <h4 className="font-bold text-black">Oaxaca Subversiva</h4>
         <p className="py-1 text-default-500 text-black/80 text-left">24/7 coverage media, AI agents running in the back to bring the most confindent and factual news.</p>
@@ -59,7 +60,7 @@ export default function App() {
     </Card>
 
 
-    <Card isHoverable isPressable className="w-72  p-1 pb-2 pt-3 mx-auto my-9 bg-white border-3 border-gray-500 hover:bg-sky-900 ">
+    <Card isHoverable isPressable className="w-72  p-1 pb-2 pt-3 mx-auto my-9 bg-white border-2 border-gray-200 hover:bg-sky-100 ">
       <CardHeader className="pb-0 pt-2 px-3 flex-col items-start ">
         <h4 className="font-bold text-black">Cultiva Saber</h4>
         <p className="py-1 text-default-500 text-black/90 text-left">Agrocoesystems to empower the independence and education of communities.</p>
@@ -71,9 +72,9 @@ export default function App() {
         <Image
           isZoomed
           alt="Card background text-center"
-          className="object-cover py-4"
+          className="object-cover p-3"
           src="/cultiva-saber-icon.svg"
-          width={70}
+          width={100}
         />
         </figure>
       <Link href="#" className="text-xs absolute z-20 text-black bottom-4 right-6  ">See more ➝</Link>
@@ -115,6 +116,6 @@ export default function App() {
 
 
 
-        </>
+        </section>
   );
 }
