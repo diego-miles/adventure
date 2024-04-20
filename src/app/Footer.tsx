@@ -51,7 +51,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="w-full md:w-1/3 xl:w-1/4 p-4 text-center">
-            <p className="sm italic font-light text-white/80 pt-14">From Oaxaca to the world</p>
+            <p className="sm italic font-light text-white/80 pt-14">From Oaxaca to the  <span className='not-italic	'>🌎</span></p>
           </div>
         </div>
       </div>

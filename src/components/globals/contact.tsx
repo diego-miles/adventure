@@ -15,7 +15,7 @@ export default function contacts() {
         /> */}
           <p className="text-md font-semibold">Keymer Inclan</p>
           <small className=" text-default-500">Co-founder</small>
-          <p className="mt-3">Marketing and management director</p>
+          <p className="mt-3">Marketing and Management director</p>
           <p> 951-547-78-63</p>
       </CardHeader>
       {/* <Divider/>

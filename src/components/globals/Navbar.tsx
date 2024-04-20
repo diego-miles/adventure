@@ -48,8 +48,9 @@ export default function App() {
             <DropdownItem
               key="Wiki-science"
               description="Educational services"
+              href="/wiki-science"
             >
-            <Link color="foreground" size="sm" href="/wiki-science">
+            <Link color="foreground" size="sm">
               Wiki Science
           </Link>
             </DropdownItem>
@@ -57,8 +58,9 @@ export default function App() {
             <DropdownItem
               key="cultiva-saber"
               description="Promoting susteinability, independecy and community"
+              href="cultiva-saber" 
             >
-          <Link color="foreground" href="cultiva-saber" size="sm">
+          <Link color="foreground" size="sm">
           
           
               Cultiva Saber
