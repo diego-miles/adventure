@@ -4,6 +4,7 @@ import React from "react";
 
 import  Card  from "../components/ui/card";
 import {BackgroundBoxesDemo} from "../components/ui/hero"
+import CardHoverEffectDemo from "./services/CardHover-services";
 
 
 
@@ -24,6 +25,8 @@ export default function Home() {
         {/* <div className="pt-60"></div> */}
       </section>
       <Card ></Card>
+      <h2>Services</h2>
+      <CardHoverEffectDemo></CardHoverEffectDemo>
     </main>
   );
 }

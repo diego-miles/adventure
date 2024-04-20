@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import CardHoverEffectDemo from "./CardHover";
+import CardHoverEffectDemo from "./CardHover-services";
 
 
 
