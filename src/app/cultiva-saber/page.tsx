@@ -13,6 +13,7 @@ import {CardHoverEffectDemo} from "./CardHover-cultiva"
 
 
 
+
 export default function Home() {
   return (
 
@@ -25,7 +26,7 @@ export default function Home() {
             alt="NextUI  Image "
             className="p-8"
             src="/cultiva-saber.svg"
-            width={150}
+            width={130}
             // height={350}
             />
         </figure>

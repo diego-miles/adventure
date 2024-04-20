@@ -3,6 +3,7 @@ import { DM_Sans, Open_Sans } from "next/font/google";
 import "./globals.css";
 import {Providers} from "./providers";
 import Navbar from "../components/globals/Navbar"
+import Footer from "./Footer"
 
 const open_sans = Open_Sans({ subsets: ["latin"],  variable: '--font-open_sans', },
 );
@@ -38,6 +39,7 @@ export default function RootLayout({
       <Providers>
         <Navbar></Navbar>
         {children}
+        <Footer></Footer>
         </Providers>
         </body>
     </html>

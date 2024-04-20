@@ -24,7 +24,7 @@ export default function App() {
         <Image
           isZoomed
           alt="Card background text-center"
-          className="object-cover rounded-xl p-3"
+          className="object-cover rounded-xl p-3 -ml-2"
           src="/wiki-blue.svg"
           width={80}
         />
@@ -72,7 +72,7 @@ export default function App() {
         <Image
           isZoomed
           alt="Card background text-center"
-          className="object-cover p-3"
+          className="object-cover p-3 -ml-2"
           src="/cultiva-saber-icon.svg"
           width={90}
         />

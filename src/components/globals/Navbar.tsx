@@ -1,9 +1,8 @@
 "use client"
 import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu} from "@nextui-org/react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Button, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, Link} from "@nextui-org/react";
 import {ChevronDown, Lock, Activity, Flash, Server, TagUser, Scale} from "./Icons.jsx";
 import {AcmeLogo} from "./AcmeLogo.jsx";
-
 
 
 
@@ -23,7 +22,8 @@ export default function App() {
           </Link>
         </NavbarItem>
         <Dropdown>
-          
+
+
           <NavbarItem>
             <DropdownTrigger>
               <Button
@@ -37,6 +37,7 @@ export default function App() {
               </Button>
             </DropdownTrigger>
           </NavbarItem>
+    
           <DropdownMenu
             aria-label="ACME features"
             className="w-[210px]"
@@ -48,33 +49,36 @@ export default function App() {
               key="Wiki-science"
               description="Educational services"
             >
-            <Link color="foreground" size="sm" href="wiki-science">
+            <Link color="foreground" size="sm" href="/wiki-science">
               Wiki Science
           </Link>
             </DropdownItem>
+
             <DropdownItem
               key="cultiva-saber"
               description="Promoting susteinability, independecy and community"
             >
-                          <Link color="foreground" href="cultiva-saber" size="sm">
+          <Link color="foreground" href="cultiva-saber" size="sm">
+          
+          
               Cultiva Saber
           </Link>
-
             </DropdownItem>
+
             <DropdownItem
               key="production_ready"
               description="Empowering Pymes. Inventoring and selling, cohesive solution across platforms"
             >
-                          <Link color="foreground" href="#" size="sm">
+            <Link color="foreground" href="#" size="sm">
               Moto tienda
           </Link>
-
             </DropdownItem>
+
             <DropdownItem
               key="99_uptime"
               description="Market place for sustainable daily life products"
             >
-                          <Link color="foreground" href="localhost:3000/wiki-science" size="sm">
+                          <Link color="foreground" href="#" size="sm">
               Barro Origen
           </Link>
 
