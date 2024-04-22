@@ -25,22 +25,7 @@ export default function Cards() {
       paddings: { padding: '1.8rem'}
 
     },
-    {
-      title: "Avocado",
-      img: "/images/fruit-5.jpeg",
-    },
-    {
-      title: "Lemon 2",
-      img: "/images/fruit-6.jpeg",
-    },
-    {
-      title: "Banana",
-      img: "/images/fruit-7.jpeg",
-    },
-    {
-      title: "Watermelon",
-      img: "/images/fruit-8.jpeg",
-    },
+
   ];
 
   return (

@@ -57,8 +57,8 @@ export function BackgroundBoxesDemo() {
       <h1 className="text-[1.7rem] md:text-[2.5rem] text-black/80 relative z-20 font-extrabold ">
         Adventure Capital
       </h1>
-      <p className="text-xl font-semibold md:text-2xl px-8 text-center mt-5 text-gray-500 relative z-20">
-        Next generation platforms based on AI systems.
+      <p className="text-xl font-medium md:text-2xl px-8 text-center mt-5 text-gray-500 relative z-20">
+        Next generation platforms based on AI systems
       </p>
     </div>
   );

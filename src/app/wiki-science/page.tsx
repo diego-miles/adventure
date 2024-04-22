@@ -3,7 +3,7 @@
 
 import { motion } from "framer-motion";
 import React from "react";
-import { AuroraBackground } from "../../components/ui/aurora-background";
+import ButtonExternal from "../../components/ui/Button-external-link";
 import InfiniteMovingCardsDemo from '../../components/globals/moving-cards'
 // import Cards from '../../components/globals/cards'
 
@@ -88,6 +88,7 @@ export default function Home() {
               <h2 >Stack</h2>
 
       <Cards></Cards>
+      <ButtonExternal></ButtonExternal>
         <div className="pt-9"></div>
       </section>
     </main>

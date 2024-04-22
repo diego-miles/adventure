@@ -67,16 +67,16 @@ export default function App() {
           </Link>
             </DropdownItem>
 
-            <DropdownItem
+            {/* <DropdownItem
               key="production_ready"
               description="Empowering Pymes. Inventoring and selling, cohesive solution across platforms"
             >
             <Link color="foreground" href="#" size="sm">
               Moto tienda
           </Link>
-            </DropdownItem>
+            </DropdownItem> */}
 
-            <DropdownItem
+            {/* <DropdownItem
               key="99_uptime"
               description="Market place for sustainable daily life products"
             >
@@ -84,23 +84,23 @@ export default function App() {
               Barro Origen
           </Link>
 
-            </DropdownItem>
-            <DropdownItem
+            </DropdownItem> */}
+            {/* <DropdownItem
               key="supreme_support"
               // description="Congress event to capacite yuoug tech talend."
             >
                                         <Link color="foreground" href="#" size="sm">
               BIT
           </Link>
-            </DropdownItem>
-            <DropdownItem
+            </DropdownItem> */}
+            {/* <DropdownItem
               key="supreme_support"
               // description="Marketing and advertisment."
             >
                                         <Link color="foreground" href="#" size="sm">
               One Campaing
           </Link>
-            </DropdownItem>
+            </DropdownItem> */}
           </DropdownMenu>
         </Dropdown>
         <NavbarItem>

@@ -3,7 +3,7 @@ import { HoverEffect } from "../../components/ui/card-hover-effect";
 
  export default function CardHoverEffectDemo() {
   return (
-    <div className="max-w-full mx-auto px-6 pt-10 pb-20">
+    <div className="max-w-full mx-auto px-6 pt-10 pb-28">
       <HoverEffect items={projects} />
     </div>
   );
@@ -27,11 +27,11 @@ import { HoverEffect } from "../../components/ui/card-hover-effect";
       "Harness the power of AI, integrate custom solution for your organization.",
     link: "#",
   },
-  {
-    title: "Business Consulting",
-    description:
-      "Dont know how to leverage from the power of new technologies? we can help you.",
-    link: "#",
-  },
+  // {
+  //   title: "Business Consulting",
+  //   description:
+  //     "Dont know how to leverage from the power of new technologies? we can help you.",
+  //   link: "#",
+  // },
 
 ];

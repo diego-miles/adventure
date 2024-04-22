@@ -28,7 +28,7 @@ export default function Home() {
     <div className="pt-5">
       <Link
         isExternal
-        href="https://maps.app.goo.gl/CUQVSQhWiCuF6pYn8"
+        href="#"
         showAnchorIcon
       >
         View office location
